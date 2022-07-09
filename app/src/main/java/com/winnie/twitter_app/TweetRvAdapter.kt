@@ -15,7 +15,7 @@ class TweetRvAdapter(var tweetList:List<Twitter>): RecyclerView.Adapter<TweetsVi
 
     override fun onBindViewHolder(holder: TweetsViewHolder, position: Int) {
         var currentTweet = tweetList.get(position)
-        holder.tvDisplay.text = currentTweet.tweet
+        holder.tvDisplay.text = currentTweet.display
         holder.tvHandle.text = currentTweet.handle
         holder.tvtweet.text = currentTweet.tweet
 

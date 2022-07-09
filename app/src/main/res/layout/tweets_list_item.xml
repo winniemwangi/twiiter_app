@@ -4,7 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/cvTweets"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="29dp"
+    android:layout_margin="8dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -42,7 +45,7 @@
 
             android:layout_width="250dp"
             android:layout_height="90dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="4dp"
             app:layout_constraintStart_toEndOf="@+id/imgImage1"
             app:layout_constraintTop_toBottomOf="@+id/tvDisplay"
             tools:text="The United States has identified at least 18 camps set up by Russia to deport Ukrainian civilians to Russia, reports The New York Times, citing a U.S. diplomat." />
@@ -56,7 +59,7 @@
             app:layout_constraintEnd_toStartOf="@+id/imgFavorite"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/imgFavorite"
+            app:layout_constraintTop_toBottomOf="@+id/tvtweet"
             app:srcCompat="@drawable/ic_baseline_comment_24" />
 
         <ImageView
@@ -67,7 +70,7 @@
             app:layout_constraintEnd_toStartOf="@+id/imgShare"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/imgFavorite"
-            app:layout_constraintTop_toTopOf="@+id/imgShare"
+            app:layout_constraintTop_toBottomOf="@+id/tvtweet"
             app:srcCompat="@drawable/ic_baseline_repeat_24" />
 
         <ImageView
@@ -78,14 +81,13 @@
             app:layout_constraintEnd_toStartOf="@+id/imgRetweet"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/imgComment"
-            app:layout_constraintTop_toTopOf="@+id/imgRetweet"
+            app:layout_constraintTop_toBottomOf="@+id/tvtweet"
             app:srcCompat="@drawable/ic_baseline_favorite_border_24" />
 
         <ImageView
             android:id="@+id/imgShare"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/imgRetweet"
